@@ -34,3 +34,34 @@ python main.py --help
 python main.py --model GCN --epochs 100 --lr 0.01 --embed_dim 16
 ```
 Models: GCN/SAGE/GAT/CHEB/AGNN/GMM
+
+## Analysis
+
+### Accuracies of models over different embedding sizes
+<img src='analysis/embeddings/gcn-embeddings.png'>
+<img src='analysis/embeddings/sage-embeddings.png'>
+<img src='analysis/embeddings/gat-embeddings.png'>
+<img src='analysis/embeddings/cheb-embeddings.png'>
+<img src='analysis/embeddings/agnn-embeddings.png'>
+
+### Accuracies comparison of different models over embedding sizes
+<img src='analysis/model-embeddings/models-embedding-4.png'>
+<img src='analysis/model-embeddings/models-embedding-8.png'>
+<img src='analysis/model-embeddings/models-embedding-16.png'>
+<img src='analysis/model-embeddings/models-embedding-32.png'>
+<img src='analysis/model-embeddings/models-embedding-64.png'>
+<img src='analysis/model-embeddings/models-embedding-256.png'>
+
+### Accuracies of models over epochs on different embedding sizes
+<img src='analysis/model-accuracies/gcn-test-acc.png'>
+<img src='analysis/model-accuracies/sage-test-acc.png'>
+<img src='analysis/model-accuracies/gat-test-acc.png'>
+<img src='analysis/model-accuracies/cheb-test-acc.png'>
+<img src='analysis/model-accuracies/agnn-test-acc.png'>
+
+### Loss of models over epoch on different embedding sizes
+<img src='analysis/model-loss/gcn-test-loss.png'>
+<img src='analysis/model-loss/sage-test-loss.png'>
+<img src='analysis/model-loss/gat-test-loss.png'>
+<img src='analysis/model-loss/cheb-test-loss.png'>
+<img src='analysis/model-loss/agnn-test-loss.png'>
