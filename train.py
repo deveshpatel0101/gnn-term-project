@@ -50,7 +50,6 @@ def pipeline(train_g, train_pos_g, train_neg_g, test_pos_g, test_neg_g, model_na
     print('Train acc', train_ac[-1], f'| Train loss: {train_loss[-1]}')
     print('Test acc', test_ac[-1], f'| Test loss: {test_loss[-1]}')
     print(train_ac, test_ac, train_loss, test_loss)
-
     return h
 
 
@@ -68,7 +67,7 @@ def compute_loss(pos_score, neg_score):
     return F.binary_cross_entropy_with_logits(scores, labels)
 
 
-def compute_auc(pos_score, neg_score):  # computes AUC (Area-Under-Curve) score
+def compute_auc(pos_score, neg_score):
     scores = torch.cat([pos_score, neg_score]).numpy()
     labels = torch.cat(
         [torch.ones(pos_score.shape[0]), torch.zeros(neg_score.shape[0])]).numpy()

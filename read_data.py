@@ -8,7 +8,6 @@ USER = 0
 
 
 def load_data():
-
     file_edges = f'data/facebook/{USER}.edges'
     file_feat = f'data/facebook/{USER}.feat'
 
