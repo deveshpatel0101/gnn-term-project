@@ -16,24 +16,30 @@
 
 1. Use the following command to install all the required libraries
    To create an environment
-   `python -m venv venv`
+   ```
+   python -m venv venv
+   ```
+   
    To activate the environment
-   `source venv/Scripts/activate`
+   ```
+   source venv/Scripts/activate
+   ```
+   
    To install the libraries
-   `pip install -r requirements.txt`
+   ```
+   pip install -r requirements.txt
+   ```
 
 2. Use the following command to see the list of available arguments.
-
-```
-python main.py --help
-```
+   ```
+   python main.py --help
+   ```
 
 3. Sample command to run GCN model
-
-```
-python main.py --model GCN --epochs 100 --lr 0.01 --embed_dim 16
-```
-Models: GCN/SAGE/GAT/CHEB/AGNN/GMM
+   ```
+   python main.py --model GCN --epochs 100 --lr 0.01 --embed_dim 16
+   ```
+   Models: GCN/SAGE/GAT/CHEB/AGNN
 
 ## Analysis
 
